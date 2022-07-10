@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ChessWarGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pgU-Ll-vrc">
+                                <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DRd-yJ-0nx">
+                                <rect key="frame" x="712" y="50" width="72" height="31"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uds-0z-d0M">
+                                <rect key="frame" x="94" y="50" width="67" height="31"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xS4-iW-jHe">
+                                <rect key="frame" x="390" y="78" width="64" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="rT9-vU-8Tm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="33"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" systemColor="linkColor"/>
+                                <color key="shadowColor" systemColor="linkColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="DeI-Q8-qqo" userLabel="ScoreStack">
+                                <rect key="frame" x="94" y="88.666666666666671" width="44" height="52.000000000000014"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XB3-Yb-u35">
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="52"/>
+                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="33"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="highlightedColor" systemColor="linkColor"/>
+                                        <color key="shadowColor" systemColor="linkColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="LcD-r4-LKc">
+                                <rect key="frame" x="740" y="88.666666666666671" width="44" height="52.000000000000014"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VU1-yx-AhL">
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="52"/>
+                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="33"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="highlightedColor" systemColor="linkColor"/>
+                                        <color key="shadowColor" systemColor="linkColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="UAg-4n-XIb">
+                                <rect key="frame" x="44" y="150" width="756" height="152"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bishop" translatesAutoresizingMaskIntoConstraints="NO" id="qI1-wE-B1A">
+                                        <rect key="frame" x="0.0" y="0.0" width="252" height="152"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dLJ-8d-Hvb">
+                                        <rect key="frame" x="252" y="0.0" width="252" height="152"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <inset key="imageEdgeInsets" minX="30" minY="0.0" maxX="30" maxY="0.0"/>
+                                        <state key="normal" title="START"/>
+                                        <connections>
+                                            <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tHt-pu-nqb"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bishop" translatesAutoresizingMaskIntoConstraints="NO" id="3zU-bH-UU4">
+                                        <rect key="frame" x="504" y="0.0" width="252" height="152"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Uds-0z-d0M" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="85E-XJ-GSB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UAg-4n-XIb" secondAttribute="trailing" id="CZM-26-jgT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UAg-4n-XIb" secondAttribute="bottom" constant="67" id="H0A-rv-eAd"/>
+                            <constraint firstItem="xS4-iW-jHe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jfz-u9-DwC"/>
+                            <constraint firstItem="UAg-4n-XIb" firstAttribute="top" secondItem="xS4-iW-jHe" secondAttribute="bottom" constant="20" id="KVW-g0-zsA"/>
+                            <constraint firstAttribute="trailing" secondItem="pgU-Ll-vrc" secondAttribute="trailing" id="M3G-jB-MH0"/>
+                            <constraint firstItem="DeI-Q8-qqo" firstAttribute="top" secondItem="Uds-0z-d0M" secondAttribute="bottom" constant="7.5" id="MMi-6X-SNf"/>
+                            <constraint firstItem="LcD-r4-LKc" firstAttribute="top" secondItem="DRd-yJ-0nx" secondAttribute="bottom" constant="7.5" id="On6-5M-c02"/>
+                            <constraint firstItem="pgU-Ll-vrc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="SVw-iv-xTX"/>
+                            <constraint firstItem="xS4-iW-jHe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="78" id="UZz-RC-4Q2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LcD-r4-LKc" secondAttribute="trailing" constant="16" id="aJU-ho-JVw"/>
+                            <constraint firstItem="UAg-4n-XIb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ebM-xm-7M1"/>
+                            <constraint firstItem="DRd-yJ-0nx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="gud-ad-TOr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DRd-yJ-0nx" secondAttribute="trailing" constant="16" id="h5C-im-ZL9"/>
+                            <constraint firstAttribute="bottom" secondItem="pgU-Ll-vrc" secondAttribute="bottom" id="k1k-c0-wJc"/>
+                            <constraint firstItem="pgU-Ll-vrc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qUy-Ct-kD1"/>
+                            <constraint firstItem="Uds-0z-d0M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="rAu-NY-crw"/>
+                            <constraint firstItem="DeI-Q8-qqo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="sHD-Tc-hDg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="panel_IMG_player1" destination="qI1-wE-B1A" id="eCX-UI-Ns1"/>
+                        <outlet property="panel_IMG_player2" destination="3zU-bH-UU4" id="fz7-4v-HW3"/>
+                        <outlet property="panel_LBL_games" destination="xS4-iW-jHe" id="OC8-3e-jfn"/>
+                        <outlet property="panel_LBL_score1" destination="XB3-Yb-u35" id="m8f-vx-mrd"/>
+                        <outlet property="panel_LBL_score2" destination="VU1-yx-AhL" id="d7G-vO-D29"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="29.805615550755942" y="82.710280373831765"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bishop" width="512" height="512"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
